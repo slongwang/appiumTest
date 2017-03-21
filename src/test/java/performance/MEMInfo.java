@@ -14,7 +14,7 @@ public class MEMInfo {
 	}
 
 	public static float getPssData(String sn, String packageName) {
-		String TOP_PSSINFO = "D:\\Android\\sdk\\platform-tools\\adb -s "
+		String TOP_PSSINFO = "adb -s "
 				+ sn + " shell dumpsys meminfo " + packageName + "|grep TOTAL";
 		
 		String pssInfo = ADBShell.sendADB(TOP_PSSINFO, 5000);

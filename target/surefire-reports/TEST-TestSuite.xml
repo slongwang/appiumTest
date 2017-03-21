@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="252.631" tests="6" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="337.754" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="xmlFileName" value="testng.xml"/>
@@ -44,7 +44,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_73\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test -DxmlFileName=testng.xml"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test -DxmlFileName=testng.xml"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="zh"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -63,10 +63,10 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="phoneInfomation" classname="com.nono.live.UiTest" time="20.015"/>
-  <testcase name="homepageHot" classname="com.nono.live.UiTest" time="132.721"/>
-  <testcase name="homepageExplore" classname="com.nono.live.UiTest" time="63.827"/>
-  <testcase name="homepageFollow" classname="com.nono.live.UiTest" time="20.583"/>
-  <testcase name="goLive" classname="com.nono.live.UiTest" time="0.122"/>
-  <testcase name="me" classname="com.nono.live.UiTest" time="0.108"/>
+  <testcase name="phoneInfomation" classname="com.nono.live.UiTest" time="20.045"/>
+  <testcase name="homepageHot" classname="com.nono.live.UiTest" time="121.441"/>
+  <testcase name="homepageExplore" classname="com.nono.live.UiTest" time="60.278"/>
+  <testcase name="homepageFollow" classname="com.nono.live.UiTest" time="24.429"/>
+  <testcase name="goLive" classname="com.nono.live.UiTest" time="57.597"/>
+  <testcase name="me" classname="com.nono.live.UiTest" time="30.925"/>
 </testsuite>

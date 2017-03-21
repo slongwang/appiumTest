@@ -21,7 +21,7 @@ public class FlowInfo {
 	}
 
 	public static float[] getFlowData(String sn, String packageName) {
-		String FlowInfo = "D:\\Android\\sdk\\platform-tools\\adb -s "+sn+
+		String FlowInfo = "adb -s "+sn+
 				 " shell cat /proc/" + getPidInfo(sn,packageName)+"/net/dev"+"|grep wlan0";	
 		String flowInfo = ADBShell.sendADB(FlowInfo, 5000);		
 		float flowData[] = new float[3];

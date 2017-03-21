@@ -32,12 +32,12 @@ public class CPUInfo {
 
 
 	public static float getCpuData(String sn, String packageName, int CpuIndex) {
-		String TOP_CPUINFO = "D:\\Android\\sdk\\platform-tools\\adb -s "
+		String TOP_CPUINFO = "adb -s "
 				+ sn + " shell top | grep " + packageName;
 		String cpuInfo = ADBShell.sendADB(TOP_CPUINFO, 5000);
 
 		float cpuData = getTotalCPUInfo(cpuInfo, CpuIndex, packageName);
-		//System.out.println(cpuData+"%");
+		System.out.println(cpuData+"%");
 		return cpuData;
 	}
 

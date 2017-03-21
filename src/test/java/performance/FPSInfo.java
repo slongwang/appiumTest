@@ -26,9 +26,9 @@ public class FPSInfo {
 	}
 
 	public static float[] getFpsData(String sn, String packageName) throws InterruptedException {
-		String FPSINFO = "D:\\Android\\sdk\\platform-tools\\adb -s "
+		String FPSINFO = "adb -s "
 				+ sn + " shell dumpsys gfxinfo " + packageName + "| grep -A60 Process ";
-		String FPSCLEAR = "D:\\Android\\sdk\\platform-tools\\adb -s "
+		String FPSCLEAR = "adb -s "
 				+ sn + " shell dumpsys gfxinfo " + packageName + "reset ";
 		ADBShell.sendADB(FPSCLEAR, 5000);
 		Thread.sleep(5000);

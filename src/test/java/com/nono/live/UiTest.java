@@ -505,13 +505,13 @@ public class UiTest {
     
     @Parameters({ "storage" })
 	@Test(priority = 30)
-    public void me() throws Exception
+    public void me(String storage) throws Exception
     {
-        checkMeInfo();
+        checkMeInfo(storage);
 //        logout();
     }
-
-    private void checkMeInfo() throws Exception
+    
+    private void checkMeInfo(String storage) throws Exception
     {
         try
         {
@@ -521,12 +521,12 @@ public class UiTest {
             ((AndroidElement)driver.findElement(By.id("com.nono.android:id/username_item"))).click();
             ((AndroidElement)driver.findElement(By.className("android.widget.EditText"))).clear();
             ((AndroidElement)driver.findElement(By.className("android.widget.EditText"))).sendKeys(new CharSequence[] {
-                "newNickName"
+            		storage
             });
             ((AndroidElement)driver.findElements(By.className("android.widget.TextView")).get(1)).click();
             ((AndroidElement)driver.findElement(By.className("android.widget.ImageButton"))).click();
             String newnickname = ((AndroidElement)driver.findElement(By.id("com.nono.android:id/user_name_text"))).getText().toString().trim();
-            if(newnickname.equals("newNickName"))
+            if(newnickname.equals(storage))
             {
                 System.out.println("change nickname success");
                 Reporter.log("change nickname success");
