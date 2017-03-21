@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+  <test name="Test">
+  	<parameter name = "port" value = "4723"/>
+    <parameter name = "udid" value = "192.168.0.78:5555"/> 
+    <parameter name = "storage" value = "mobile_1"/>
+    <classes>
+      <class name="com.nono.live.UiTest"/>
+      	<methods>    		   		 
+      		<include name ="phoneInfomation"/>
+       		<include name = "homepageHot"/>
+			<include name = "homepageExplore"/>
+			<include name = "homepageFollow"/>
+			<include name = "goLive"/>
+			<include name = "me"/>
+			<!-- <include name = "phoneNumberLogin"/>	 -->
+      	</methods>      
+    </classes>
+     <listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

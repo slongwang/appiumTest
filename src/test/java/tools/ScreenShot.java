@@ -8,7 +8,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
 public class ScreenShot {
-	public static String currentPath = System.getProperty("user.dir")+"\\"+"snapshot";
+	public static String currentPath = System.getProperty("user.dir")+"\\"+"target";
 	public static void snapShot(TakesScreenshot drivername,String palce) throws InterruptedException {
 	       snapShot(drivername,GetCurrentDateTime.getCurrentDateTime(),palce);
 	    }
