@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Test"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="144.389">
+  <properties />
+  
+  
+            <testcase name="phoneInfomation" time="20.024" classname="com.nono.live.UiTest" />
+                <testcase name="homepageHot" time="124.365" classname="com.nono.live.UiTest" />
+      
+</testsuite>

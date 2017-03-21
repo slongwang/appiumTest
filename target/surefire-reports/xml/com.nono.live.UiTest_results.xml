@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Test"
+           tests="6"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="237.376">
+  <properties />
+  
+  
+            <testcase name="homepageExplore" time="63.827" classname="com.nono.live.UiTest" />
+                <testcase name="homepageFollow" time="20.584" classname="com.nono.live.UiTest" />
+                <testcase name="me" time="0.107" classname="com.nono.live.UiTest" />
+                <testcase name="homepageHot" time="132.721" classname="com.nono.live.UiTest" />
+                <testcase name="phoneInfomation" time="20.015" classname="com.nono.live.UiTest" />
+                <testcase name="goLive" time="0.122" classname="com.nono.live.UiTest" />
+      
+</testsuite>

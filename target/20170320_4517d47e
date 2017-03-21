@@ -1,0 +1,17 @@
+{"FLOWReceive":"0.5","FLOWTotal":"2.66","MEM":"104.25","CPU":"17.0%","Time":"11:36","udid":" 192.168.0.78:5555","FLOWSend":"2.17"}
+{"FLOWReceive":"0.66","FLOWTotal":"3.23","MEM":"131.09","CPU":"21.0%","Time":"11:40","udid":" 192.168.0.78:5555","FLOWSend":"2.58"}
+{"FLOWReceive":"1.76","FLOWTotal":"4.52","MEM":"166.28","CPU":"24.0%","Time":"11:41","udid":" 192.168.0.78:5555","FLOWSend":"2.76"}
+{"FLOWReceive":"2.63","FLOWTotal":"5.54","MEM":"171.11","CPU":"23.0%","Time":"11:41","udid":" 192.168.0.78:5555","FLOWSend":"2.91"}
+{"FLOWReceive":"4.15","FLOWTotal":"8.46","MEM":"157.64","CPU":"28.0%","Time":"11:41","udid":" 192.168.0.78:5555","FLOWSend":"4.3"}
+{"FLOWReceive":"4.26","FLOWTotal":"8.71","MEM":"151.02","CPU":"8.0%","Time":"11:42","udid":" 192.168.0.78:5555","FLOWSend":"4.44"}
+{"FLOWReceive":"5.78","FLOWTotal":"10.57","MEM":"158.04","CPU":"16.0%","Time":"11:42","udid":" 192.168.0.78:5555","FLOWSend":"4.79"}
+{"FLOWReceive":"7.16","FLOWTotal":"13.37","MEM":"183.49","CPU":"15.0%","Time":"11:43","udid":" 192.168.0.78:5555","FLOWSend":"6.2"}
+{"FLOWReceive":"7.86","FLOWTotal":"17.47","MEM":"183.28","CPU":"44.0%","Time":"11:43","udid":" 192.168.0.78:5555","FLOWSend":"9.61"}
+{"FLOWReceive":"8.75","FLOWTotal":"23.14","MEM":"184.15","CPU":"44.0%","Time":"11:44","udid":" 192.168.0.78:5555","FLOWSend":"14.4"}
+{"FLOWReceive":"1.11","FLOWTotal":"3.75","MEM":"142.58","CPU":"26.0%","Time":"12:10","FLOWSend":"2.65"}
+{"FLOWReceive":"2.4","FLOWTotal":"5.23","MEM":"166.55","CPU":"23.0%","Time":"12:11","FLOWSend":"2.83"}
+{"FLOWReceive":"3.83","FLOWTotal":"6.8","MEM":"175.9","CPU":"28.0%","Time":"12:11","FLOWSend":"2.97"}
+{"FLOWReceive":"5.47","FLOWTotal":"9.76","MEM":"153.35","CPU":"24.0%","Time":"12:12","FLOWSend":"4.3"}
+{"FLOWReceive":"7.78","FLOWTotal":"12.4","MEM":"178.07","CPU":"46.0%","Time":"12:12","FLOWSend":"4.62"}
+{"FLOWReceive":"7.85","FLOWTotal":"12.61","MEM":"167.58","CPU":"14.0%","Time":"12:13","FLOWSend":"4.76"}
+{"FLOWReceive":"9.98","FLOWTotal":"15.14","MEM":"191.2","CPU":"15.0%","Time":"12:13","FLOWSend":"5.16"}

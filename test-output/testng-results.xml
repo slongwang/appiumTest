@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="5" total="7" passed="2">
+  <reporter-output>
+    <line>
+      <![CDATA[Phone Information:]]>
+    </line>
+    <line>
+      <![CDATA[Model:Lenovo Lenovo A6000]]>
+    </line>
+    <line>
+      <![CDATA[Resolution:720x1280]]>
+    </line>
+    <line>
+      <![CDATA[DPI:320]]>
+    </line>
+    <line>
+      <![CDATA[today had checked!]]>
+    </line>
+    <line>
+      <![CDATA[enter living room]]>
+    </line>
+    <line>
+      <![CDATA[nickname test successed]]>
+    </line>
+    <line>
+      <![CDATA[viewers number diff small ,test success]]>
+    </line>
+    <line>
+      <![CDATA[coins enough]]>
+    </line>
+    <line>
+      <![CDATA[send gift successed]]>
+    </line>
+    <line>
+      <![CDATA[shared  via facebook successed]]>
+    </line>
+    <line>
+      <![CDATA[chat successed]]>
+    </line>
+    <line>
+      <![CDATA[Test Hot page successed!]]>
+    </line>
+  </reporter-output>
+  <suite name="Suite" duration-ms="159330" started-at="2017-03-18T10:29:16Z" finished-at="2017-03-18T10:31:55Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="159330" started-at="2017-03-18T10:29:16Z" finished-at="2017-03-18T10:31:55Z">
+      <class name="com.nono.live.UiTest">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.nono.live.UiTest@30a3107a]" name="setUp" is-config="true" duration-ms="12479" started-at="2017-03-18T18:29:16Z" finished-at="2017-03-18T18:29:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4723]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[192.168.0.78:5555]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="phoneInfomation(java.lang.String)[pri:1, instance:com.nono.live.UiTest@30a3107a]" name="phoneInfomation" duration-ms="20024" started-at="2017-03-18T18:29:28Z" finished-at="2017-03-18T18:29:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[192.168.0.78:5555]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Phone Information:]]>
+            </line>
+            <line>
+              <![CDATA[Model:Lenovo Lenovo A6000]]>
+            </line>
+            <line>
+              <![CDATA[Resolution:720x1280]]>
+            </line>
+            <line>
+              <![CDATA[DPI:320]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- phoneInfomation -->
+        <test-method status="PASS" signature="homepageHot(java.lang.String)[pri:10, instance:com.nono.live.UiTest@30a3107a]" name="homepageHot" duration-ms="124365" started-at="2017-03-18T18:29:49Z" finished-at="2017-03-18T18:31:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mobile_1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[today had checked!]]>
+            </line>
+            <line>
+              <![CDATA[enter living room]]>
+            </line>
+            <line>
+              <![CDATA[nickname test successed]]>
+            </line>
+            <line>
+              <![CDATA[viewers number diff small ,test success]]>
+            </line>
+            <line>
+              <![CDATA[coins enough]]>
+            </line>
+            <line>
+              <![CDATA[send gift successed]]>
+            </line>
+            <line>
+              <![CDATA[shared  via facebook successed]]>
+            </line>
+            <line>
+              <![CDATA[chat successed]]>
+            </line>
+            <line>
+              <![CDATA[Test Hot page successed!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- homepageHot -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.nono.live.UiTest@30a3107a]" name="tearDown" is-config="true" duration-ms="2432" started-at="2017-03-18T18:31:53Z" finished-at="2017-03-18T18:31:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.nono.live.UiTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
