@@ -39,7 +39,7 @@ public class PerformanceMonitor implements Runnable{
 		
 	@Override
 	public synchronized void run(){
-		float[] fflow = FlowInfo.getFlowData(this.DeviceID, this.AppName);
+//		float[] fflow = FlowInfo.getFlowData(this.DeviceID, this.AppName);
 		while (this.isRunning) {
 			if(this.suspend){	
 				 try
@@ -53,23 +53,23 @@ public class PerformanceMonitor implements Runnable{
 		            }
 			}
 			else{
-				String time = tools.GetCurrentDateTime.getCurrentHourAndMinTime();
-				resultList.put("Time",time);
+//				String time = tools.GetCurrentDateTime.getCurrentHourAndMinTime();
+//				resultList.put("Time",time);
 				float cpuinfo= CPUInfo.getCpuData(this.DeviceID, this.AppName, 3);
-				resultList.put("CPU",cpuinfo+"%");
+				resultList.put("CPU",cpuinfo+"");//百分占用比，百分比符号去除便于绘图
 				float meminfo = MEMInfo.getPssData(this.DeviceID, this.AppName);
 				meminfo = meminfo/1024;
 				meminfo = (float)(Math.round(meminfo*100))/100;
 				resultList.put("MEM", meminfo+"");
-				float[] flow = FlowInfo.getFlowData(this.DeviceID, this.AppName);
-				float[] flows = new float[3];
-				for(int i = 0;i<3;i++){
-					flows[i] =flow[i]-fflow[i];
-					flows[i] = (float)(Math.round(flows[i]*100))/100;
-				}
-				resultList.put("FLOWReceive", flows[0]+"");
-				resultList.put("FLOWSend", flows[1]+"");
-				resultList.put("FLOWTotal", flows[2]+"");
+//				float[] flow = FlowInfo.getFlowData(this.DeviceID, this.AppName);
+//				float[] flows = new float[3];
+//				for(int i = 0;i<3;i++){
+//					flows[i] =flow[i]-fflow[i];
+//					flows[i] = (float)(Math.round(flows[i]*100))/100;
+//				}
+//				resultList.put("FLOWReceive", flows[0]+"");
+//				resultList.put("FLOWSend", flows[1]+"");
+//				resultList.put("FLOWTotal", flows[2]+"");
 				try {
 					Thread.sleep(3000);
 

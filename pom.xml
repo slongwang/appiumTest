@@ -12,6 +12,10 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <alice.context.path>${project.basedir}/src/test/config/Bots/context.xml</alice.context.path>
+    <alice.splitters.path>${project.basedir}/src/test/config/Bots/splitters.xml</alice.splitters.path>
+    <alice.substitutions.path>${project.basedir}/src/test/config/Bots/substitutions.xml</alice.substitutions.path>
+    <alice.aiml>${project.basedir}/src/test/config/Bots/Alice</alice.aiml>
   </properties>
 
   <dependencies>
@@ -78,9 +82,26 @@
 	    <artifactId>htmlunit-core-js</artifactId>
 	    <version>2.2</version>
 	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.beanshell/bsh -->
+	<dependency>
+	    <groupId>org.beanshell</groupId>
+	    <artifactId>bsh</artifactId>
+	    <version>2.0b4</version>
+	</dependency>
+	<dependency>
+            <groupId>com.chenlb.mmseg4j</groupId>
+            <artifactId>mmseg4j-core</artifactId>
+            <version>1.10.0</version>
+        </dependency>
   </dependencies>
   
-<build>
+	<build>
+		<resources>
+            <resource>
+                <directory>${project.basedir}/src/test/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
         <plugins>
         <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -107,7 +128,22 @@
                             <value>org.uncommons.reportng.HTMLReporter, org.uncommons.reportng.JUnitXMLReporter</value>
                         </property>
                     </properties>
-                    <workingDirectory>target/</workingDirectory>
+                    <workingDirectory>target/</workingDirectory>                
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.2</version>
+                <configuration>
+                    <source>1.7</source>
+                    <target>1.7</target>
+                    <fork>true</fork>
+                    <verbose>true</verbose>
+                    <encoding>UTF-8</encoding>
+                    <compilerArguments>
+                        <sourcepath>${project.basedir}/src/test/java</sourcepath>
+                    </compilerArguments>
                 </configuration>
             </plugin>
         </plugins>

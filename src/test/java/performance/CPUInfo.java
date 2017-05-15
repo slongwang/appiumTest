@@ -37,7 +37,7 @@ public class CPUInfo {
 		String cpuInfo = ADBShell.sendADB(TOP_CPUINFO, 5000);
 
 		float cpuData = getTotalCPUInfo(cpuInfo, CpuIndex, packageName);
-		System.out.println(cpuData+"%");
+//		System.out.println(cpuData+"%");
 		return cpuData;
 	}
 

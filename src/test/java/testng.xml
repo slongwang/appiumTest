@@ -7,13 +7,13 @@
     <classes>
       <class name="com.nono.live.UiTest"/>
       	<methods>    		   		 
-      		<include name ="phoneInfomation"/>
+       		<include name ="phoneInfomation"/>
        		<include name = "homepageHot"/>
 			<include name = "homepageExplore"/>
 			<include name = "homepageFollow"/>
 			<include name = "goLive"/>
-			<include name = "me"/>
-			<!-- <include name = "phoneNumberLogin"/>	 -->
+			<include name = "me"/> 
+			<!--  <include name = "phoneNumberLogin"/>-->
       	</methods>      
     </classes>
      <listeners>

@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]">
+<suite name="Failed suite [Suite]" parallel="tests">
   <listeners>
     <listener class-name="org.uncommons.reportng.HTMLReporter"/>
     <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
   </listeners>
-  <test name="Test(failed)">
+  <test name="TestPer(failed)" parallel="tests">
     <parameter name="port" value="4723"/>
     <parameter name="storage" value="mobile_1"/>
     <parameter name="udid" value="192.168.0.78:5555"/>
     <classes>
-      <class name="com.nono.live.UiTest">
+      <class name="com.nono.live.PerformanceTest">
         <methods>
+          <include name="testViewPerformance"/>
           <include name="setUp"/>
-          <include name="homepageHot" invocation-numbers="0"/>
-          <include name="phoneInfomation" invocation-numbers="0"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.nono.live.UiTest -->
+      </class> <!-- com.nono.live.PerformanceTest -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- TestPer(failed) -->
 </suite> <!-- Failed suite [Suite] -->

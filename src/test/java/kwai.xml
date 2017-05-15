@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="tests" thread-count="5">
+   <test name="TestPer">
+  	<parameter name = "port" value = "4723"/>
+    <parameter name = "udid" value = "192.168.0.200:5555"/> 
+    <parameter name = "storage" value = "mobile_1"/>
+    <classes>
+      <class name="com.nono.live.kwaiTest"/>
+      	<methods>    		   		 
+       		 <include name ="testViewPerformance"/>
+      	</methods>      
+    </classes>
+     <listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+  </test> 
+</suite> <!-- Suite -->

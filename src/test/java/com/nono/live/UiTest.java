@@ -62,6 +62,7 @@ public class UiTest {
             Reporter.log("Get phone information failure");
         }
     }
+    
     @Parameters({ "storage" })
 	@Test(priority = 10) 
     public void homepageHot(String sn) throws InterruptedException
@@ -69,11 +70,10 @@ public class UiTest {
         try
         {
             Thread.sleep(1000L);
-            Thread.sleep(1000L);
             checkIn(sn);
             checkViewList(sn);
             sendGift(sn);
-            share();
+//            share();
             chat();
             Thread.sleep(2000L);
             textfly();
@@ -248,7 +248,7 @@ public class UiTest {
         {
             ((AndroidElement)driver.findElement(By.id("com.nono.android:id/send_gift_btn"))).click();
             ScreenShot.snapShot(driver, "sendGift", sn);
-            ((AndroidElement)driver.findElement(By.id("com.nono.android:id/ne"))).click();
+            ((AndroidElement)driver.findElement(By.id("com.nono.android:id/dialog_send_gift_btn"))).click();
             Thread.sleep(3000L);
             try
             {
@@ -614,22 +614,19 @@ public class UiTest {
     public void phoneNumberLogin() throws InterruptedException
     {
         Thread.sleep(3000L);
-        List<AndroidElement> countrys = driver.findElements(By.className("android.widget.ImageView"));
-        ((AndroidElement)countrys.get(4)).click();
+//        List<AndroidElement> countrys = driver.findElements(By.className("android.widget.ImageView"));
+//        ((AndroidElement)countrys.get(4)).click();
         Thread.sleep(500L);
         ((AndroidElement)driver.findElement(By.xpath("//android.widget.LinearLayout/android.widget.ImageView[4]"))).click();
         Thread.sleep(500L);
         ((AndroidElement)driver.findElement(By.xpath("//android.widget.TextView[@text = 'Login']"))).click();
+        
         List<AndroidElement> usernameAndPassword = driver.findElements(By.className("android.widget.EditText"));
-        ((AndroidElement)usernameAndPassword.get(0)).clear();
-        ((AndroidElement)usernameAndPassword.get(0)).sendKeys(new CharSequence[] {
-            "13800138005"
-        });
-        ((AndroidElement)usernameAndPassword.get(1)).clear();
-        ((AndroidElement)usernameAndPassword.get(1)).sendKeys(new CharSequence[] {
-            "123456"
-        });
-        ((AndroidElement)driver.findElement(By.xpath("//android.widget.Button"))).click();
+        usernameAndPassword.get(0).clear();
+        usernameAndPassword.get(0).sendKeys("13800138005");
+        usernameAndPassword.get(1).clear();
+        usernameAndPassword.get(1).sendKeys("123456");
+        driver.findElement(By.xpath("//android.widget.Button")).click();
         driver.manage().timeouts().implicitlyWait(20L, TimeUnit.SECONDS);
         Reporter.log("test phonenumber Login successed!");
     }
@@ -708,12 +705,12 @@ public class UiTest {
 
     private void confirm() throws Exception
     {
-        ((AndroidElement)driver.findElement(By.id("android:id/button1"))).click();
+        ((AndroidElement)driver.findElement(By.xpath("//android.widget.TextView[@text = 'Confirm']"))).click();
     }
 
     private void cancel() throws Exception
     {
-        ((AndroidElement)driver.findElement(By.id("android:id/button2"))).click();
+        ((AndroidElement)driver.findElement(By.xpath("//android.widget.TextView[@text = 'Cancel']"))).click();
     }
 
 }

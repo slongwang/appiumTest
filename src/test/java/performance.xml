@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="tests" thread-count="5">
+  <test name="TestPer">
+  	<parameter name = "port" value = "4723"/>
+    <parameter name = "udid" value = "192.168.0.78:5555"/> 
+    <parameter name = "storage" value = "mobile_1"/>
+    <classes>
+      <class name="com.nono.live.PerformanceTest"/>
+      	<methods>    		   		 
+       		<include name ="testViewPerformance"/>
+       		<include name ="testTimes"/>
+      	</methods>      
+    </classes>
+     <listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+  </test> <!-- Test -->
+  
+<!--     <test name="TestPer2">
+  	<parameter name = "port" value = "4725"/>
+    <parameter name = "udid" value = "192.168.0.51:5555"/> 
+    <parameter name = "storage" value = "mobile_2"/>
+    <classes>
+      <class name="com.nono.live.PerformanceTest"/>
+      	<methods>    		   		 
+       		<include name ="testViewPerformance"/>
+       		<include name ="testTimes"/>
+      	</methods>      
+    </classes>
+     <listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+  </test> -->
+</suite> <!-- Suite -->

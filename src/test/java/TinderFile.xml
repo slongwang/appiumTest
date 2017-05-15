@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+  <test name="Test">
+  	<parameter name = "port" value = "4723"/>
+    <parameter name = "udid" value = "192.168.0.78:5555"/> 
+    <classes>
+      <class name="com.nono.live.Tinder"/>
+      	<methods>    	
+      		<!-- <include name ="testlike"/>	 -->   		 
+       		<include name ="testExplore"/>
+
+      	</methods>      
+    </classes>
+     <listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
