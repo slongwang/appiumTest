@@ -26,7 +26,13 @@
       <![CDATA[HD change failed]]>
     </line>
     <line>
-      <![CDATA[homepageHot test failed]]>
+      <![CDATA[Test Hot page successed!]]>
+    </line>
+    <line>
+      <![CDATA[Test search failure]]>
+    </line>
+    <line>
+      <![CDATA[Test enter country list success]]>
     </line>
     <line>
       <![CDATA[Test Explore page failure!]]>
@@ -35,7 +41,7 @@
       <![CDATA[start test Follow page  ...]]>
     </line>
     <line>
-      <![CDATA[test Follow page failure]]>
+      <![CDATA[test Follow page success]]>
     </line>
     <line>
       <![CDATA[start test golive ...]]>
@@ -47,12 +53,12 @@
       <![CDATA[Test change nickname failure]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="64135" started-at="2017-05-13T14:54:19Z" finished-at="2017-05-13T14:55:24Z">
+  <suite name="Suite" duration-ms="108976" started-at="2017-05-22T03:49:55Z" finished-at="2017-05-22T03:51:44Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="64135" started-at="2017-05-13T14:54:19Z" finished-at="2017-05-13T14:55:24Z">
+    <test name="Test" duration-ms="108976" started-at="2017-05-22T03:49:55Z" finished-at="2017-05-22T03:51:44Z">
       <class name="com.nono.live.UiTest">
-        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.nono.live.UiTest@1a8a8f7c]" name="setUp" is-config="true" duration-ms="13330" started-at="2017-05-13T22:54:19Z" finished-at="2017-05-13T22:54:33Z">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.nono.live.UiTest@1a8a8f7c]" name="setUp" is-config="true" duration-ms="13994" started-at="2017-05-22T11:49:55Z" finished-at="2017-05-22T11:50:09Z">
           <params>
             <param index="0">
               <value>
@@ -68,7 +74,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="phoneInfomation(java.lang.String)[pri:1, instance:com.nono.live.UiTest@1a8a8f7c]" name="phoneInfomation" duration-ms="20026" started-at="2017-05-13T22:54:33Z" finished-at="2017-05-13T22:54:53Z">
+        <test-method status="PASS" signature="phoneInfomation(java.lang.String)[pri:1, instance:com.nono.live.UiTest@1a8a8f7c]" name="phoneInfomation" duration-ms="20020" started-at="2017-05-22T11:50:09Z" finished-at="2017-05-22T11:50:29Z">
           <params>
             <param index="0">
               <value>
@@ -91,7 +97,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- phoneInfomation -->
-        <test-method status="PASS" signature="homepageHot(java.lang.String)[pri:10, instance:com.nono.live.UiTest@1a8a8f7c]" name="homepageHot" duration-ms="30561" started-at="2017-05-13T22:54:53Z" finished-at="2017-05-13T22:55:23Z">
+        <test-method status="PASS" signature="homepageHot(java.lang.String)[pri:10, instance:com.nono.live.UiTest@1a8a8f7c]" name="homepageHot" duration-ms="41860" started-at="2017-05-22T11:50:29Z" finished-at="2017-05-22T11:51:11Z">
           <params>
             <param index="0">
               <value>
@@ -113,11 +119,11 @@
               <![CDATA[HD change failed]]>
             </line>
             <line>
-              <![CDATA[homepageHot test failed]]>
+              <![CDATA[Test Hot page successed!]]>
             </line>
           </reporter-output>
         </test-method> <!-- homepageHot -->
-        <test-method status="PASS" signature="homepageExplore(java.lang.String)[pri:11, instance:com.nono.live.UiTest@1a8a8f7c]" name="homepageExplore" duration-ms="35" started-at="2017-05-13T22:55:23Z" finished-at="2017-05-13T22:55:23Z">
+        <test-method status="PASS" signature="homepageExplore(java.lang.String)[pri:11, instance:com.nono.live.UiTest@1a8a8f7c]" name="homepageExplore" duration-ms="7817" started-at="2017-05-22T11:51:11Z" finished-at="2017-05-22T11:51:19Z">
           <params>
             <param index="0">
               <value>
@@ -127,11 +133,17 @@
           </params>
           <reporter-output>
             <line>
+              <![CDATA[Test search failure]]>
+            </line>
+            <line>
+              <![CDATA[Test enter country list success]]>
+            </line>
+            <line>
               <![CDATA[Test Explore page failure!]]>
             </line>
           </reporter-output>
         </test-method> <!-- homepageExplore -->
-        <test-method status="PASS" signature="homepageFollow(java.lang.String)[pri:12, instance:com.nono.live.UiTest@1a8a8f7c]" name="homepageFollow" duration-ms="32" started-at="2017-05-13T22:55:23Z" finished-at="2017-05-13T22:55:23Z">
+        <test-method status="PASS" signature="homepageFollow(java.lang.String)[pri:12, instance:com.nono.live.UiTest@1a8a8f7c]" name="homepageFollow" duration-ms="20396" started-at="2017-05-22T11:51:19Z" finished-at="2017-05-22T11:51:40Z">
           <params>
             <param index="0">
               <value>
@@ -144,11 +156,11 @@
               <![CDATA[start test Follow page  ...]]>
             </line>
             <line>
-              <![CDATA[test Follow page failure]]>
+              <![CDATA[test Follow page success]]>
             </line>
           </reporter-output>
         </test-method> <!-- homepageFollow -->
-        <test-method status="PASS" signature="goLive()[pri:20, instance:com.nono.live.UiTest@1a8a8f7c]" name="goLive" duration-ms="39" started-at="2017-05-13T22:55:23Z" finished-at="2017-05-13T22:55:23Z">
+        <test-method status="PASS" signature="goLive()[pri:20, instance:com.nono.live.UiTest@1a8a8f7c]" name="goLive" duration-ms="1936" started-at="2017-05-22T11:51:40Z" finished-at="2017-05-22T11:51:41Z">
           <reporter-output>
             <line>
               <![CDATA[start test golive ...]]>
@@ -158,7 +170,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- goLive -->
-        <test-method status="PASS" signature="me(java.lang.String)[pri:30, instance:com.nono.live.UiTest@1a8a8f7c]" name="me" duration-ms="36" started-at="2017-05-13T22:55:23Z" finished-at="2017-05-13T22:55:23Z">
+        <test-method status="PASS" signature="me(java.lang.String)[pri:30, instance:com.nono.live.UiTest@1a8a8f7c]" name="me" duration-ms="254" started-at="2017-05-22T11:51:41Z" finished-at="2017-05-22T11:51:42Z">
           <params>
             <param index="0">
               <value>
@@ -172,62 +184,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- me -->
-        <test-method status="FAIL" signature="tearDown()[pri:0, instance:com.nono.live.UiTest@1a8a8f7c]" name="tearDown" is-config="true" duration-ms="0" started-at="2017-05-13T22:55:23Z" finished-at="2017-05-13T22:55:23Z">
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[A session is either terminated or not started (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 24 milliseconds
-Build info: version: 'unknown', revision: 'c7b525d', time: '2016-09-01 14:57:44 -0700'
-System info: host: 'LAPTOP-OSA1RE24', ip: '192.168.0.29', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_73'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities [{appPackage=com.nono.android, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=4517d47e, platform=LINUX, deviceUDID=4517d47e, appActivity=.modules.splash.SplashActivity, desired={appPackage=com.nono.android, appActivity=.modules.splash.SplashActivity, newCommandTimeout=120, platformVersion=5.0.2, platformName=Android, deviceName=192.168.0.78:5555}, newCommandTimeout=120, platformVersion=5.0.2, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
-Session ID: 6ef70965-18e9-43a2-b953-2f82b1dd8329]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: A session is either terminated or not started (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 24 milliseconds
-Build info: version: 'unknown', revision: 'c7b525d', time: '2016-09-01 14:57:44 -0700'
-System info: host: 'LAPTOP-OSA1RE24', ip: '192.168.0.29', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_73'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities [{appPackage=com.nono.android, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=4517d47e, platform=LINUX, deviceUDID=4517d47e, appActivity=.modules.splash.SplashActivity, desired={appPackage=com.nono.android, appActivity=.modules.splash.SplashActivity, newCommandTimeout=120, platformVersion=5.0.2, platformName=Android, deviceName=192.168.0.78:5555}, newCommandTimeout=120, platformVersion=5.0.2, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
-Session ID: 6ef70965-18e9-43a2-b953-2f82b1dd8329
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:631)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:206)
-	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:493)
-	at com.nono.live.UiTest.tearDown(UiTest.java:45)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:144)
-	at org.testng.TestRunner.afterRun(TestRunner.java:983)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
-	at org.testng.TestNG.runSuites(TestNG.java:1133)
-	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.nono.live.UiTest@1a8a8f7c]" name="tearDown" is-config="true" duration-ms="2669" started-at="2017-05-22T11:51:42Z" finished-at="2017-05-22T11:51:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

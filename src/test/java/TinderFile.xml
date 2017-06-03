@@ -5,9 +5,9 @@
     <parameter name = "udid" value = "192.168.0.78:5555"/> 
     <classes>
       <class name="com.nono.live.Tinder"/>
-      	<methods>    	
-      		<!-- <include name ="testlike"/>	 -->   		 
-       		<include name ="testExplore"/>
+      	<methods>  
+      	  	<!--  <include name ="testlike"/>  -->
+      		<include name ="testchat"/>  		 
 
       	</methods>      
     </classes>

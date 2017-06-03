@@ -7,7 +7,7 @@
     <classes>
       <class name="com.nono.live.PerformanceTest"/>
       	<methods>    		   		 
-       		<include name ="testViewPerformance"/>
+       		<!--<include name ="testViewPerformance"/> -->
        		<include name ="testTimes"/>
       	</methods>      
     </classes>

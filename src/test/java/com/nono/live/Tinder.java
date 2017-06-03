@@ -84,8 +84,8 @@ public class Tinder {
     	Thread.sleep(8000);
     	driver.findElement(By.id("com.tinder:id/tab_matches")).click();
     	Thread.sleep(1000);
-    	newMatched();
-//    	unviewCheckAndChat();
+//    	newMatched();
+    	unviewCheckAndChat();
     }
     
     @Test
@@ -240,8 +240,8 @@ public class Tinder {
    			chat(exp);
    		}
    		if(i==9){
-   			chat("I have to working");
-   			chat("You can come and watch my live");
+   			chat("Aku biasanya live di Nonolive loh, ID Nonolive aku 326411. Kita bisa ngobrol langsung disana. Pasti lebih seru.");
+   			chat("nonolive http://m.onelink.me/431f8460");
    		}
    	}
    }

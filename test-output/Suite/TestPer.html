@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>TestPer</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat May 13 20:11:42 CST 2017</td>
+<td>Started on:</td><td>Mon May 22 11:20:31 CST 2017</td>
 </tr>
-<tr><td>Total time:</td><td>4368 seconds (4368026 ms)</td>
+<tr><td>Total time:</td><td>1746 seconds (1746613 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,84 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.nono.live.PerformanceTest.testViewPerformance()'><b>testViewPerformance</b><br>Test class: com.nono.live.PerformanceTest</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 239 milliseconds
-Build info: version: &apos;unknown&apos;, revision: &apos;c7b525d&apos;, time: &apos;2016-09-01 14:57:44 -0700&apos;
-System info: host: &apos;LAPTOP-OSA1RE24&apos;, ip: &apos;192.168.0.29&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_73&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities [{appPackage=com.nono.android, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=192.168.0.78:5555, platform=LINUX, deviceUDID=192.168.0.78:5555, appActivity=.modules.splash.SplashActivity, desired={appPackage=com.nono.android, appActivity=.modules.splash.SplashActivity, newCommandTimeout=120, platformVersion=5.0.2, platformName=Android, deviceName=192.168.0.78:5555}, newCommandTimeout=120, platformVersion=5.0.2, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
-Session ID: 5da6db56-d483-4f17-be36-d9a471d46e77
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:631)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at io.appium.java_client.AppiumDriver.performTouchAction(AppiumDriver.java:314)
-	at io.appium.java_client.MultiTouchAction.perform(MultiTouchAction.java:74)
-	at io.appium.java_client.AppiumDriver.tap(AppiumDriver.java:355)
-	at com.nono.live.PerformanceTest.livetime(PerformanceTest.java:99)
-	at com.nono.live.PerformanceTest.testViewPerformance(PerformanceTest.java:62)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1128209037", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1128209037'><pre>org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 239 milliseconds
-Build info: version: &apos;unknown&apos;, revision: &apos;c7b525d&apos;, time: &apos;2016-09-01 14:57:44 -0700&apos;
-System info: host: &apos;LAPTOP-OSA1RE24&apos;, ip: &apos;192.168.0.29&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_73&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities [{appPackage=com.nono.android, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=192.168.0.78:5555, platform=LINUX, deviceUDID=192.168.0.78:5555, appActivity=.modules.splash.SplashActivity, desired={appPackage=com.nono.android, appActivity=.modules.splash.SplashActivity, newCommandTimeout=120, platformVersion=5.0.2, platformName=Android, deviceName=192.168.0.78:5555}, newCommandTimeout=120, platformVersion=5.0.2, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
-Session ID: 5da6db56-d483-4f17-be36-d9a471d46e77
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:631)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at io.appium.java_client.AppiumDriver.performTouchAction(AppiumDriver.java:314)
-	at io.appium.java_client.MultiTouchAction.perform(MultiTouchAction.java:74)
-	at io.appium.java_client.AppiumDriver.tap(AppiumDriver.java:355)
-	at com.nono.live.PerformanceTest.livetime(PerformanceTest.java:99)
-	at com.nono.live.PerformanceTest.testViewPerformance(PerformanceTest.java:62)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-</pre></div></td>
-<td>2649</td>
-<td>com.nono.live.PerformanceTest@51e2adc7</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -153,9 +75,16 @@ Session ID: 5da6db56-d483-4f17-be36-d9a471d46e77
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.nono.live.PerformanceTest.testTimes()'><b>testTimes</b><br>Test class: com.nono.live.PerformanceTest</td>
+<td title='com.nono.live.PerformanceTest.testTimes()'><b>testTimes</b><br>Test class: com.nono.live.PerformanceTest<br/>
+<a href="#Output-1910335343" onClick='toggleBox("Output-1910335343", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1910335343" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1910335343">
+chat successed<br/>
+</div>
+</td>
 <td></td>
-<td>1696</td>
+<td>1731</td>
 <td>com.nono.live.PerformanceTest@51e2adc7</td></tr>
 </table><p>
 </body>
