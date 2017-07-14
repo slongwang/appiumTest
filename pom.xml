@@ -17,6 +17,15 @@
     <alice.substitutions.path>${project.basedir}/src/test/config/Bots/substitutions.xml</alice.substitutions.path>
     <alice.aiml>${project.basedir}/src/test/config/Bots/Alice</alice.aiml>
   </properties>
+  
+  	<repositories>
+  		<repository>
+    		<id>jcenter</id>
+    		<name>bintray</name>
+    		<url>http://jcenter.bintray.com</url>
+  		</repository>
+	</repositories>
+  
 
   <dependencies>
      <dependency>
@@ -44,10 +53,12 @@
             <scope>test</scope>
         </dependency>
   	<dependency>
-    	<groupId>org.testng</groupId>
-   	 	<artifactId>testng</artifactId>
-    	<version>6.10</version>
+	  <groupId>org.testng</groupId>
+	  <artifactId>testng</artifactId>
+	  <version>6.10</version>
+	  <scope>test</scope>
 	</dependency>
+
 	<dependency>
     	<groupId>io.appium</groupId>
     	<artifactId>java-client</artifactId>

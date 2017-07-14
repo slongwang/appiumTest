@@ -4,15 +4,15 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="92.283">
+           time="34.314">
   <properties />
   
   
-            <testcase name="me" time="0.254" classname="com.nono.live.UiTest" />
-                <testcase name="homepageHot" time="41.860" classname="com.nono.live.UiTest" />
-                <testcase name="homepageExplore" time="7.817" classname="com.nono.live.UiTest" />
-                <testcase name="homepageFollow" time="20.396" classname="com.nono.live.UiTest" />
-                <testcase name="goLive" time="1.936" classname="com.nono.live.UiTest" />
-                <testcase name="phoneInfomation" time="20.020" classname="com.nono.live.UiTest" />
+            <testcase name="homepageExplore" time="0.154" classname="com.nono.live.UiTest" />
+                <testcase name="goLive" time="0.295" classname="com.nono.live.UiTest" />
+                <testcase name="me" time="0.195" classname="com.nono.live.UiTest" />
+                <testcase name="phoneInfomation" time="0.018" classname="com.nono.live.UiTest" />
+                <testcase name="homepageFollow" time="0.146" classname="com.nono.live.UiTest" />
+                <testcase name="homepageHot" time="33.506" classname="com.nono.live.UiTest" />
       
 </testsuite>

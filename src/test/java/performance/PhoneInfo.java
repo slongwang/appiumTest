@@ -27,7 +27,7 @@ public class PhoneInfo {
 	}
 	
 	public static String getPlatformVersion(String sn){//获取手机版本号
-		String PVINFO = "adb -s "
+		String PVINFO = "/Users/wang/Library/Android/sdk/platform-tools/adb -s "
 				+sn+ " shell getprop "+"ro.build.version.release";
 		String versionInfo = ADBShell.sendADB(PVINFO, 5000);
 		versionInfo = versionInfo.trim();

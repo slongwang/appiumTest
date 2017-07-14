@@ -2,13 +2,13 @@
 <suite name="Suite" parallel="tests" thread-count="5">
   <test name="TestPer">
   	<parameter name = "port" value = "4723"/>
-    <parameter name = "udid" value = "192.168.0.78:5555"/> 
+    <parameter name = "udid" value = "192.168.0.172:5555"/> 
     <parameter name = "storage" value = "mobile_1"/>
     <classes>
       <class name="com.nono.live.PerformanceTest"/>
       	<methods>    		   		 
-       		<!--<include name ="testViewPerformance"/> -->
-       		<include name ="testTimes"/>
+       		<include name ="testViewPerformance"/>
+       		<!--<include name ="testTimes"/> -->
       	</methods>      
     </classes>
      <listeners>

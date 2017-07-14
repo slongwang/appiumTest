@@ -21,7 +21,7 @@ import performance.PhoneInfo;
 public class PerformanceTest {
 	private AppiumDriver<AndroidElement> driver;
     private String appPackage = "com.nono.android";
-    private PerformanceMonitor monitor;
+//    private PerformanceMonitor monitor;
     
     @BeforeTest
 	@Parameters({ "port", "udid" })
@@ -29,24 +29,25 @@ public class PerformanceTest {
     {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("deviceName", udid);
-        capabilities.setCapability("platformVersion", PhoneInfo.getPlatformVersion(udid));
+        capabilities.setCapability("platformVersion", "5.0.2");//PhoneInfo.getPlatformVersion(udid)
         capabilities.setCapability("appPackage", appPackage);
         capabilities.setCapability("newCommandTimeout", "120");
         capabilities.setCapability("appActivity", ".modules.splash.SplashActivity");
+        capabilities.setCapability("noReset", true);
         driver = new AndroidDriver<AndroidElement>(new URL((new StringBuilder("http://127.0.0.1:")).append(port).append("/wd/hub").toString()), capabilities);
-        monitor = new PerformanceMonitor(udid, appPackage, (new StringBuilder("performanceMonitor")).append(port).toString());
+//        monitor = new PerformanceMonitor(udid, appPackage, (new StringBuilder("performanceMonitor")).append(port).toString());
     }
     @AfterTest
     public void tearDown() throws Exception
     {
-    	monitor.stop();
+//    	monitor.stop();
         driver.quit();
     }
     
     @Test
     public void testViewPerformance() throws Exception{
     	Thread.sleep(1000L);
-    	monitor.start();
+//    	monitor.start();
     	List<AndroidElement> tabs = driver.findElements(By.id("com.nono.android:id/tv_tab_title"));
         ((AndroidElement)tabs.get(1)).click();
         driver.findElements(By.className("android.widget.ImageView")).get(3).click();
@@ -67,7 +68,7 @@ public class PerformanceTest {
     public void testTimes() throws Exception{
     	Thread.sleep(1000L);
     	try{
-	    	driver.findElements(By.className("android.widget.TextView")).get(3).click();
+	    	driver.findElements(By.className("android.widget.TextView")).get(5).click();
 	    	for(int i=0;i<500;i++){
 	    		swipe();
 	    		System.out.println(i);

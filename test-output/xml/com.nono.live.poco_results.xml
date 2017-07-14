@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestPer"
+<testsuite name="Test"
            tests="1"
            failures="0"
            errors="0"
            skipped="0"
-           time="1323.969">
+           time="46.288">
   <properties />
   
   
-            <testcase name="testTimes" time="1323.969" classname="com.nono.live.PerformanceTest" />
+            <testcase name="testPoco" time="46.288" classname="com.nono.live.poco" />
       
 </testsuite>

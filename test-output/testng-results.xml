@@ -1,64 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="1" total="7" passed="6">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
-    <line>
-      <![CDATA[Phone Information:]]>
-    </line>
-    <line>
-      <![CDATA[Model:Lenovo Lenovo A6000]]>
-    </line>
-    <line>
-      <![CDATA[Resolution:720x1280]]>
-    </line>
-    <line>
-      <![CDATA[DPI:320]]>
-    </line>
-    <line>
-      <![CDATA[today had checked!]]>
-    </line>
-    <line>
-      <![CDATA[chat failed]]>
-    </line>
-    <line>
-      <![CDATA[textfly failed]]>
-    </line>
-    <line>
-      <![CDATA[HD change failed]]>
-    </line>
-    <line>
-      <![CDATA[Test Hot page successed!]]>
-    </line>
-    <line>
-      <![CDATA[Test search failure]]>
-    </line>
-    <line>
-      <![CDATA[Test enter country list success]]>
-    </line>
-    <line>
-      <![CDATA[Test Explore page failure!]]>
-    </line>
-    <line>
-      <![CDATA[start test Follow page  ...]]>
-    </line>
-    <line>
-      <![CDATA[test Follow page success]]>
-    </line>
-    <line>
-      <![CDATA[start test golive ...]]>
-    </line>
-    <line>
-      <![CDATA[Test go live failure]]>
-    </line>
-    <line>
-      <![CDATA[Test change nickname failure]]>
-    </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="108976" started-at="2017-05-22T03:49:55Z" finished-at="2017-05-22T03:51:44Z">
+  <suite name="Suite" duration-ms="64469" started-at="2017-07-13T08:53:03Z" finished-at="2017-07-13T08:54:07Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="108976" started-at="2017-05-22T03:49:55Z" finished-at="2017-05-22T03:51:44Z">
-      <class name="com.nono.live.UiTest">
-        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.nono.live.UiTest@1a8a8f7c]" name="setUp" is-config="true" duration-ms="13994" started-at="2017-05-22T11:49:55Z" finished-at="2017-05-22T11:50:09Z">
+    <test name="Test" duration-ms="64469" started-at="2017-07-13T08:53:03Z" finished-at="2017-07-13T08:54:07Z">
+      <class name="com.nono.live.poco">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.nono.live.poco@5bb21b69]" name="setUp" is-config="true" duration-ms="15656" started-at="2017-07-13T16:53:03Z" finished-at="2017-07-13T16:53:18Z">
           <params>
             <param index="0">
               <value>
@@ -67,128 +16,22 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[192.168.0.78:5555]]>
+                <![CDATA[192.168.0.141:5555]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="phoneInfomation(java.lang.String)[pri:1, instance:com.nono.live.UiTest@1a8a8f7c]" name="phoneInfomation" duration-ms="20020" started-at="2017-05-22T11:50:09Z" finished-at="2017-05-22T11:50:29Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[192.168.0.78:5555]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="testPoco()[pri:0, instance:com.nono.live.poco@5bb21b69]" name="testPoco" duration-ms="46288" started-at="2017-07-13T16:53:18Z" finished-at="2017-07-13T16:54:05Z">
           <reporter-output>
-            <line>
-              <![CDATA[Phone Information:]]>
-            </line>
-            <line>
-              <![CDATA[Model:Lenovo Lenovo A6000]]>
-            </line>
-            <line>
-              <![CDATA[Resolution:720x1280]]>
-            </line>
-            <line>
-              <![CDATA[DPI:320]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- phoneInfomation -->
-        <test-method status="PASS" signature="homepageHot(java.lang.String)[pri:10, instance:com.nono.live.UiTest@1a8a8f7c]" name="homepageHot" duration-ms="41860" started-at="2017-05-22T11:50:29Z" finished-at="2017-05-22T11:51:11Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[mobile_1]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[today had checked!]]>
-            </line>
-            <line>
-              <![CDATA[chat failed]]>
-            </line>
-            <line>
-              <![CDATA[textfly failed]]>
-            </line>
-            <line>
-              <![CDATA[HD change failed]]>
-            </line>
-            <line>
-              <![CDATA[Test Hot page successed!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- homepageHot -->
-        <test-method status="PASS" signature="homepageExplore(java.lang.String)[pri:11, instance:com.nono.live.UiTest@1a8a8f7c]" name="homepageExplore" duration-ms="7817" started-at="2017-05-22T11:51:11Z" finished-at="2017-05-22T11:51:19Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[mobile_1]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Test search failure]]>
-            </line>
-            <line>
-              <![CDATA[Test enter country list success]]>
-            </line>
-            <line>
-              <![CDATA[Test Explore page failure!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- homepageExplore -->
-        <test-method status="PASS" signature="homepageFollow(java.lang.String)[pri:12, instance:com.nono.live.UiTest@1a8a8f7c]" name="homepageFollow" duration-ms="20396" started-at="2017-05-22T11:51:19Z" finished-at="2017-05-22T11:51:40Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[mobile_1]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[start test Follow page  ...]]>
-            </line>
-            <line>
-              <![CDATA[test Follow page success]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- homepageFollow -->
-        <test-method status="PASS" signature="goLive()[pri:20, instance:com.nono.live.UiTest@1a8a8f7c]" name="goLive" duration-ms="1936" started-at="2017-05-22T11:51:40Z" finished-at="2017-05-22T11:51:41Z">
-          <reporter-output>
-            <line>
-              <![CDATA[start test golive ...]]>
-            </line>
-            <line>
-              <![CDATA[Test go live failure]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- goLive -->
-        <test-method status="PASS" signature="me(java.lang.String)[pri:30, instance:com.nono.live.UiTest@1a8a8f7c]" name="me" duration-ms="254" started-at="2017-05-22T11:51:41Z" finished-at="2017-05-22T11:51:42Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[mobile_1]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Test change nickname failure]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- me -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.nono.live.UiTest@1a8a8f7c]" name="tearDown" is-config="true" duration-ms="2669" started-at="2017-05-22T11:51:42Z" finished-at="2017-05-22T11:51:44Z">
+        </test-method> <!-- testPoco -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.nono.live.poco@5bb21b69]" name="tearDown" is-config="true" duration-ms="2515" started-at="2017-07-13T16:54:05Z" finished-at="2017-07-13T16:54:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.nono.live.UiTest -->
+      </class> <!-- com.nono.live.poco -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
